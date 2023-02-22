@@ -56,6 +56,6 @@ class PatreonService:
                     patreon_response.tier = Tier.TIER_1
                 elif current_tier == 300:
                     patreon_response.tier = Tier.TIER_2
-                elif current_tier == 500:
+                elif current_tier >= 500:
                     patreon_response.tier = Tier.TIER_3
         return patreon_response
